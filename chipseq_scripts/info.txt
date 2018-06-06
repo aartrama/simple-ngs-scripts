@@ -1,0 +1,2 @@
+# always run fastqc and multiqc before you proceed to run any of these scripts.
+# if adapters are present, remove them using cutadapt. Only then proceed with the alignment of reads.
