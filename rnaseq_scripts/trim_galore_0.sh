@@ -1,0 +1,12 @@
+INPUTDIR=
+OUTPUTDIR=
+cd $INPUTDIR
+for f in *R1*.fastq.gz
+do
+BASENAME=$(basename "$f" _R1_001.fastq.gz)
+trim_galore ${BASENAME}_R1_001.fastq.gz ${BASENAME}_R2_001.fastq.gz \
+--paired \
+-a AGATCGGAAGAGCACACGTCTGAACTCCAGTCA \
+-a2 AGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT \
+-o $OUTPUTDIR
+done

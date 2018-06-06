@@ -1,0 +1,5 @@
+# always run fastqc and multiqc before you proceed to run any of these scripts.
+# if adapters are present, remove them using cutadapt. Only then proceed with the alignment of reads.
+# to determine if library is strand specific, use the following command on a bam file (for 
+# htseq script)
+# infer_experiment.py -i 13_AGTCAA_L006_R1_001.bam -r /home/ramaka02/resources/ensembl_84/mouse/Mus_musculus.GRCm38.84.bed
